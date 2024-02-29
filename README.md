@@ -6,5 +6,6 @@ Playground for go-zero framekwork.
 
 ### Global Dedendencies
 
-- export PATH="$HOME/go/bin:$PATH"
-- go install github.com/zeromicro/go-zero/tools/goctl@latest
+- Run `go install github.com/zeromicro/go-zero/tools/goctl@latest`
+- Run `nano ~/.profile` and add `export PATH="$HOME/go/bin:$PATH"`
+- Run `. ~/.profile`
