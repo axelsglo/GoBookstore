@@ -1,24 +1,35 @@
 syntax = "v1"
 
 info (
-	title: // TODO: add title
-	desc: // TODO: add description
+	title:  "Bookstore api"
+	desc:   ""
 	author: ""
-	email: ""
+	email:  ""
 )
 
-type request {
-	// TODO: add members here and delete this comment
+type addReq {
+	book  string `form:"book"`
+	price int64  `form:"price"`
 }
 
-type response {
-	// TODO: add members here and delete this comment
+type addRes {
+	ok bool `json:"ok"`
+}
+
+type checkReq {
+	book string `form:"book"`
+}
+
+type checkRes {
+	found bool  `json:"found"`
+	price int64 `json:"price"`
 }
 
 service bookstore-api {
-	@handler GetUser // TODO: set handler name and delete this comment
-	get /users/id/:userId(request) returns(response)
+	@handler AddHandler
+	get /add (addReq) returns (addRes)
 
-	@handler CreateUser // TODO: set handler name and delete this comment
-	post /users/create(request)
+	@handler CheckHandler
+	get /check (checkReq) returns (checkRes)
 }
+
