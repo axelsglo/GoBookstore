@@ -2,6 +2,8 @@ module bookstore
 
 go 1.21.7
 
+require github.com/zeromicro/go-zero v1.6.2
+
 require (
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cenkalti/backoff/v4 v4.2.1 // indirect
@@ -23,7 +25,6 @@ require (
 	github.com/prometheus/common v0.45.0 // indirect
 	github.com/prometheus/procfs v0.12.0 // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
-	github.com/zeromicro/go-zero v1.6.2 // indirect
 	go.opentelemetry.io/otel v1.19.0 // indirect
 	go.opentelemetry.io/otel/exporters/jaeger v1.17.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.19.0 // indirect

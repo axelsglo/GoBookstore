@@ -1,7 +1,7 @@
 package svc
 
 import (
-	"bookstore/api/internal/config"
+	"bookstore/internal/config"
 )
 
 type ServiceContext struct {

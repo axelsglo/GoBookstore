@@ -3,9 +3,9 @@ package handler
 import (
 	"net/http"
 
-	"bookstore/api/internal/logic"
-	"bookstore/api/internal/svc"
-	"bookstore/api/internal/types"
+	"bookstore/internal/logic"
+	"bookstore/internal/svc"
+	"bookstore/internal/types"
 	"github.com/zeromicro/go-zero/rest/httpx"
 )
 
